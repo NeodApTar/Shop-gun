@@ -1,0 +1,220 @@
+html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    min-width: 100%;
+    height: 100%;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0px;
+    padding: 0px;
+}
+
+/*=============== BASE ===============*/
+
+body {
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.7;
+    background-color: black;
+    height: 100%;
+
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: red;
+}
+
+ul {
+    list-style-type: none;
+
+}
+
+img {
+    max-width: 100%;
+}
+
+/*=============== REUSABLE CSS CLASSES ===============*/
+
+.container {
+    max-width: 1440px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.section {
+    padding-block: 2rem;
+}
+
+.section--lg {
+    padding-block: 4rem;
+}
+
+.form__input {
+    border: 1px solid rgb(255, 255, 255);
+    padding-inline: 1rem;
+    height: 45px;
+    border-radius: 0.25rem;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    column-gap: .5rem;
+}
+
+.new__price {
+    color: white;
+    font-weight: 500;
+}
+
+.old__price {
+    color: hsl(230, 12%, 40%);
+    text-decoration: line-through
+}
+
+
+
+
+
+
+
+
+
+/*=============== FOOTER ===============*/
+
+.footer {
+    padding-top: 40px;
+    padding-bottom: 35px;
+    margin-top: auto;
+}
+
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-top: 4px;
+
+}
+
+.footer__contacts {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    gap: 5px;
+}
+
+.footer__social {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    padding-top: 10px;
+    padding-left: 0px;
+}
+
+.menu__list {
+    display: flex;
+    gap: 20px;
+    padding: 0;
+}
+
+.menu__list-link {
+    text-transform: uppercase;
+}
+
+.menu__list-item {
+    padding-top: 10px;
+}
+
+/*=============== BREAKPOINTS ===============*/
+@media (max-width: 1440px) {}
+
+@media (max-width: 900px) {
+    .footer__inner {
+        flex-wrap: wrap;
+        padding-top: 4px;
+
+    }
+
+    .footer__contacts {
+        width: 100%;
+        text-align: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .footer__social {
+        justify-content: center;
+
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+
+    }
+
+    .container {
+        max-width: 640px;
+        padding: 0;
+    }
+
+
+
+}
+
+@media (max-width: 640px) {
+    .container {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+
+}
+
+@media (max-width: 500px) {
+    .footer__inner {
+        flex-direction: column;
+    }
+
+    .footer__menu {
+        padding: 15px 0;
+        text-align: center;
+    }
+
+    .footer__menu-list {
+        flex-direction: column;
+    }
+
+    .footer {
+        padding: 50px 0;
+        font-size: 14px;
+    }
+
+}
